@@ -125,9 +125,9 @@ namespace ScClient
 
         private void OnWebsocketMessageReceived(object sender, MessageReceivedEventArgs e)
         {
-            if (e.Message == "")
+            if (e.Message == "#1")
             {
-                _socket.Send("");
+                _socket.Send("#2");
             }
             else
             {
